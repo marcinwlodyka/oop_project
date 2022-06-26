@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\BanerImage.png" />
+    <None Remove="Assets\tile.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\BanerImage.png" />
+    <Resource Include="Assets\tile.png" />
+  </ItemGroup>
+
+</Project>

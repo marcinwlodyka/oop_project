@@ -42,7 +42,7 @@
         <!--header-->
         <Grid Grid.Row="0">
             <Grid.Background>
-                <ImageBrush ImageSource="pack://application:,,,/Assets/tile.png" TileMode="FlipXY" ViewportUnits="Absolute" Viewport="3, 3, 10, 10" />
+                <ImageBrush ImageSource="pack://application:,,,/Assets/Tile.png" TileMode="FlipXY" ViewportUnits="Absolute" Viewport="3, 3, 10, 10" />
             </Grid.Background>
             <Rectangle>
                 <Rectangle.Fill>

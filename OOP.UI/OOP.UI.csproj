@@ -7,13 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\BanerImage.png" />
+    <None Remove="Assets\Logo.png" />
     <None Remove="Assets\tile.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\BanerImage.png" />
-    <Resource Include="Assets\tile.png" />
+    <Resource Include="Assets\Logo.png" />
+    <Resource Include="Assets\Tile.png" />
   </ItemGroup>
 
 </Project>

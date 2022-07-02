@@ -28,7 +28,7 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
     </Window.Resources>
-    
+
     <Grid>
         <!--main grid definitions-->
         <Grid.Background>
@@ -38,7 +38,7 @@
             <RowDefinition Height="60" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        
+
         <!--header-->
         <Grid Grid.Row="0">
             <Grid.Background>
@@ -56,6 +56,176 @@
             <Image Source="pack://application:,,,/Assets/Logo.png" HorizontalAlignment="Left" />
             <Button Template="{StaticResource MainBtn}" Grid.Row="0" Width="100" HorizontalAlignment="Right" Margin="110, 5">Orders</Button>
             <Button Template="{StaticResource MainBtn}" Grid.Row="0" Width="100" HorizontalAlignment="Right" Margin="5, 5">Menu</Button>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="28.261"></ColumnDefinition>
+                <ColumnDefinition Width="321.739"/>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="270"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="217*"></RowDefinition>
+                <RowDefinition Height="167*"/>
+                <RowDefinition Height="25"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel
+            Grid.Column="1"
+            Grid.Row="2" Grid.ColumnSpan="2" Margin="0,167,0,0" Grid.RowSpan="2"
+            />
+
+            <StackPanel
+            Grid.Column="1"
+            Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="5"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="5"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="5"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="5"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="5"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+                    <Label
+                    Content="Order ID"
+                    Grid.Row="0"
+                     Grid.Column="0" >
+                    </Label>
+
+                    <TextBox      
+                    x:Name="txtOrderID"
+                    Grid.Row="0"
+                     Grid.Column="1"
+                 />
+
+
+                    <Label
+                    Content="Pizza ID"
+                    Grid.Row="2"
+                     Grid.Column="0" >
+                    </Label>
+
+                    <TextBox      
+                    x:Name="txtPizzaID"
+                    Grid.Row="2"
+                     Grid.Column="2"
+                 />
+
+
+                    <Label
+                    Content="Size ID"
+                    Grid.Row="4"
+                     Grid.Column="0" >
+                    </Label>
+
+                    <TextBox      
+                    x:Name="txtSizeID"
+                    Grid.Row="4"
+                     Grid.Column="2"
+                 />
+
+                    <Label
+                        Content="Order date"
+                        Grid.Row="6"
+                        Grid.Column="0" 
+                    />
+
+                    <TextBox      
+                        x:Name="txtOrderDate"
+                        Grid.Row="6"
+                        Grid.Column="2"
+                    />
+
+                    <Label
+                        Content="Address"
+                        Grid.Row="8"
+                        Grid.Column="0" 
+                    />
+
+                    <TextBox      
+                        x:Name="txtAddress"
+                        Grid.Row="8"
+                        Grid.Column="2"
+                    />
+
+                    <!--Button-->
+                    <StackPanel
+                     Grid.Row="12"
+                     Grid.ColumnSpan="2"
+                     Orientation="Horizontal"
+                    >
+
+                        <Button
+                        Width="50"
+                        Content="Add"
+                        x:Name="ButtonAdd"
+                        Margin="10 0 10 0"
+                        Click="ButtonAdd_Click"
+                        />
+
+                        <Button
+                        Width="50"
+                        Content="Update"
+                        x:Name="ButtonEdit"
+                        Margin="10 0 10 0"
+                        />
+                        <Button
+                        Width="50"
+                        Content="Search"
+                        x:Name="ButtonSearch"
+                        Margin="10 0 10 0"
+                        />
+                        <Button
+                        Width="50"
+                        Content="Delete"
+                        x:Name="ButtonDelete"
+                        Margin="10 0 10 0"
+                        />
+                        <Button
+                        Width="50"
+                        Content="List"
+                        x:Name="ButtonList"
+                        Margin="10 0 10 0"
+                      
+                        />
+                    </StackPanel>
+
+
+                </Grid>
+
+            </StackPanel>
+
+            <DataGrid
+            Grid.Column="4"
+            Grid.Row="1"
+            x:Name="DataGridBrand"
+            Margin="5,5,5,5" Grid.RowSpan="2">
+
+
+            </DataGrid>
+
         </Grid>
     </Grid>
 </Window>

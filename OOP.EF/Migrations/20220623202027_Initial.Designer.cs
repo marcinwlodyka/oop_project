@@ -8,7 +8,7 @@ using OOP.EF;
 
 namespace OOP.EF.Migrations
 {
-    [DbContext(typeof(PizzeriaDBContex))]
+    [DbContext(typeof(PizzeriaDBContext))]
     [Migration("20220623202027_Initial")]
     partial class Initial
     {
